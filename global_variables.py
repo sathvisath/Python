@@ -21,3 +21,4 @@ def myfunc3():
     x="World" # we have to assign the value in the next line after declaring the variable is global
     print("Hello "+x)
 myfunc3()
+print("Welcome to my "+x) #here x="World" cause we declared it as global
