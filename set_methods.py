@@ -36,4 +36,13 @@ a={"hello","hi","Bonjour","Hallo","Namaskaram"}
 a.pop()
 print(a)   # here it popped the item "Bonjour" and if you execute it again it will remove another item 
 
+# clear() method
+a={"hello","hi","Bonjour","Hallo","Namaskaram"}
+a.clear()
+print(a)   # will just return an empty set
+
+# del() method
+a={"hello","hi","Bonjour","Hallo","Namaskaram"}
+del a
+print(a)   # will rise an error as the set is deleted
 
