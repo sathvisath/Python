@@ -1,0 +1,28 @@
+command = " "    # we will declare the variable here to store user input in while loop
+started = False   
+stopped = False
+helped = False
+while command != "quit":
+    command = input("> Please give a command: ").lower()
+    if command == "start":
+        if started:           # if the user gives start command once the car will start and second time it will tell the user that car is laready started
+            print("The car is already started")
+        else:
+            started = True
+            print("The car is started..let's goooo..")
+    elif command == "stop":   # same for stop
+        if stopped:
+            print("The car is already stopped")
+        else:
+            stopped = True
+            print("The car is stopped successfully")
+    elif command == "quit":
+        break
+    elif command == "help":
+        if helped:           # same for help
+            print("I've told you to select a command")
+        else:
+            helped = True
+            print("Select a command: start, stop, quit")
+    else:
+        print("Give a valid command")
