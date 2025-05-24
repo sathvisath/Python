@@ -1,3 +1,5 @@
+# This is a car game that will use while loop to run. It is an example of while loop including if-else, boolean. Gives a better understanding of loops involving other concepts
+
 command = " "    # we will declare the variable here to store user input in while loop
 started = False   
 stopped = False
