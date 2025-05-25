@@ -12,12 +12,12 @@ while command != "quit":
         else:
             started = True
             print("The car is started..let's goooo..")
-    elif command == "stop":   # same for stop
-        if stopped:
-            print("The car is already stopped")
-        else:
+    elif command == "stop":   
+        if stopped==False:    # we can also write it in this way , both ways work the same.
             stopped = True
             print("The car is stopped successfully")
+        else:
+            print("The car is already stopped")
     elif command == "quit":
         break
     elif command == "help":
